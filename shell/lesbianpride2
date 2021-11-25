@@ -1,0 +1,14 @@
+DORAN='\033[48;2;213;45;0m'
+LORAN='\033[48;2;255;154;86m'
+WHITE='\033[48;2;255;255;255m'
+LPINK='\033[48;2;209;98;164m'
+DPINK='\033[48;2;163;2;98m'
+NC='\033[0m' # No Color
+
+printf "\n"
+printf "${DORAN}                          ${NC}\n"
+printf "${LORAN}                          ${NC}\n"
+printf "${WHITE}                          ${NC}\n"
+printf "${LPINK}                          ${NC}\n"
+printf "${DPINK}                          ${NC}\n"
+printf "\n"

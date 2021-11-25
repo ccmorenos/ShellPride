@@ -1,0 +1,12 @@
+BLUE='\033[48;2;92;206;250m'
+PINK='\033[48;2;245;169;184m'
+WHIT='\033[48;2;255;255;255m'
+NC='\033[0m' # No Color
+
+printf "\n"
+printf "${BLUE}                          ${NC}\n"
+printf "${PINK}                          ${NC}\n"
+printf "${WHIT}                          ${NC}\n"
+printf "${PINK}                          ${NC}\n"
+printf "${BLUE}                          ${NC}\n"
+printf "\n"
