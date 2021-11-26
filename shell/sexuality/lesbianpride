@@ -1,3 +1,4 @@
+# Background Colors
 DORAN='\033[48;2;213;45;0m'
 MORAN='\033[48;2;239;118;39m'
 LORAN='\033[48;2;255;154;86m'
@@ -5,8 +6,11 @@ WHITE='\033[48;2;255;255;255m'
 LPINK='\033[48;2;209;98;164m'
 MPINK='\033[48;2;181;86;144m'
 DPINK='\033[48;2;163;2;98m'
-NC='\033[0m' # No Color
 
+# No Color
+NC='\033[0m'
+
+# Print the flag
 printf "\n"
 printf "${DORAN}                          ${NC}\n"
 printf "${MORAN}                          ${NC}\n"

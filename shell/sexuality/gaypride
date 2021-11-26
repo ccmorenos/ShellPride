@@ -1,3 +1,4 @@
+# Background Colors
 DGREE='\033[48;2;7;141;112m'
 MGREE='\033[48;2;38;206;170m'
 LGREE='\033[48;2;152;232;193m'
@@ -5,8 +6,11 @@ WHITE='\033[48;2;255;255;255m'
 LBLUE='\033[48;2;123;173;226m'
 MBLUE='\033[48;2;80;73;204m'
 DBLUE='\033[48;2;61;26;120m'
-NC='\033[0m' # No Color
 
+# No Color
+NC='\033[0m'
+
+# Print the flag
 printf "\n"
 printf "${DGREE}                          ${NC}\n"
 printf "${MGREE}                          ${NC}\n"

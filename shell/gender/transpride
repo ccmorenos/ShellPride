@@ -1,8 +1,12 @@
+# Background Colors
 BLUE='\033[48;2;92;206;250m'
 PINK='\033[48;2;245;169;184m'
 WHIT='\033[48;2;255;255;255m'
-NC='\033[0m' # No Color
 
+# No Color
+NC='\033[0m'
+
+# Print the flag
 printf "\n"
 printf "${BLUE}                          ${NC}\n"
 printf "${PINK}                          ${NC}\n"
