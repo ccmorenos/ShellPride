@@ -1,0 +1,31 @@
+# Background Colors
+RED='\033[48;2;255;0;0m'
+ORA='\033[48;2;255;142;0m'
+YEL='\033[48;2;255;255;0m'
+GRE='\033[48;2;0;142;0m'
+BLU='\033[48;2;0;192;192m'
+PUR='\033[48;2;64;0;152m'
+BLUE='\033[48;2;92;206;250m'
+PINK='\033[48;2;245;169;184m'
+WHIT='\033[48;2;255;255;255m'
+BLAC='\033[48;2;0;0;0m'
+BROW='\033[48;2;97;57;21m'
+
+# No Color
+NC='\033[0m'
+
+# Print the flag
+printf "\n"
+printf "${BLUE}  ${BROW}   ${BLAC}   ${RED}                         ${NC}\n"
+printf "${PINK}  ${BLUE}   ${BROW}   ${BLAC}   ${RED}                      ${NC}\n"
+printf "${PINK}   ${BLUE}   ${BROW}   ${BLAC}   ${ORA}                     ${NC}\n"
+printf "${WHIT}  ${PINK}   ${BLUE}   ${BROW}   ${BLAC}   ${ORA}                   ${NC}\n"
+printf "${WHIT}   ${PINK}   ${BLUE}   ${BROW}   ${BLAC}   ${YEL}                  ${NC}\n"
+printf "${WHIT}    ${PINK}   ${BLUE}   ${BROW}   ${BLAC}   ${YEL}                 ${NC}\n"
+printf "${WHIT}    ${PINK}   ${BLUE}   ${BROW}   ${BLAC}   ${GRE}                 ${NC}\n"
+printf "${WHIT}   ${PINK}   ${BLUE}   ${BROW}   ${BLAC}   ${GRE}                  ${NC}\n"
+printf "${WHIT}  ${PINK}   ${BLUE}   ${BROW}   ${BLAC}   ${BLU}                   ${NC}\n"
+printf "${PINK}   ${BLUE}   ${BROW}   ${BLAC}   ${BLU}                     ${NC}\n"
+printf "${PINK}  ${BLUE}   ${BROW}   ${BLAC}   ${PUR}                      ${NC}\n"
+printf "${BLUE}  ${BROW}   ${BLAC}   ${PUR}                         ${NC}\n"
+printf "\n"
