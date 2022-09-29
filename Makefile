@@ -23,25 +23,9 @@ install-user:
 	@cp -u shell/sexuality/lesbianpride2 ~/.local/bin
 
 	@echo "Configuring resources file for $(current_shell)"
-	@echo "export PATH=$$PATH:current_shell_rc" >> $(current_shell_rc)
+	@echo "export PATH=\$$PATH:~/.local/bin" >> $(current_shell_rc)
 
-	@transbipride
-	@transgaypride
-	@translesbianpride
-	@translesbianpride2
-	@genderfluidpride
-	@nonbinarypride
-	@transpride
-	@transpride2
-	@transpride3
-	@transpride4
 	@pride
-	@progresspride
-	@bipride
-	@gaypride
-	@gaypride2
-	@lesbianpride
-	@lesbianpride2
 
 install:
 	@cp -u shell/combinations/transbipride /usr/bin
@@ -61,6 +45,8 @@ install:
 	@cp -u shell/sexuality/gaypride2 /usr/bin
 	@cp -u shell/sexuality/lesbianpride /usr/bin
 	@cp -u shell/sexuality/lesbianpride2 /usr/bin
+
+	@pride
 
 uninstall:
 	@rm -f /usr/bin/transbipride
