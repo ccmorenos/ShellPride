@@ -1,5 +1,5 @@
 current_shell := $(shell echo $$SHELL)
-current_shell_rc ?= ~/.$(shell echo $$SHELL | awk -F "/" '{print $$3}')rc
+current_shell_rc ?= ~/.$(shell echo $$SHELL | awk -F "/" '{print $$(NF)}')rc
 
 install-user:
 	@echo "Installing scripts"
@@ -28,6 +28,7 @@ install-user:
 
 	@echo "Configuring resources file for $(current_shell)"
 	@echo "export PATH=\$$PATH:~/.local/bin" >> $(current_shell_rc)
+	@source $(current_shell_rc)
 
 	@pride
 
