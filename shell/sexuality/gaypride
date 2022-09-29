@@ -1,3 +1,4 @@
+#! /bin/bash
 # Background Colors
 DGREE='\033[48;2;7;141;112m'
 MGREE='\033[48;2;38;206;170m'

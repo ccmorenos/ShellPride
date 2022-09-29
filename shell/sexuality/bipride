@@ -1,3 +1,4 @@
+#! /bin/bash
 # Background Colors
 PINK='\033[48;2;214;2;112m'
 PURP='\033[48;2;155;79;150m'

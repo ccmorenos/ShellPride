@@ -1,3 +1,4 @@
+#! /bin/bash
 # Background Colors
 PINK='\033[48;2;255;118;164m'
 WHIT='\033[48;2;255;255;255m'

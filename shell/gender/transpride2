@@ -1,3 +1,4 @@
+#! /bin/bash
 # Text Color
 BLACK_TEXT='\033[30m'
 

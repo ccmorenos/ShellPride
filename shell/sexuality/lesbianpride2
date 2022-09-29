@@ -1,3 +1,4 @@
+#! /bin/bash
 # Background Colors
 DORAN='\033[48;2;213;45;0m'
 LORAN='\033[48;2;255;154;86m'
