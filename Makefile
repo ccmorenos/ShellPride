@@ -4,6 +4,8 @@ current_shell_rc ?= ~/.$(shell echo $$SHELL | awk -F "/" '{print $$3}')rc
 install-user:
 	@echo "Installing scripts"
 
+	@mkdir -p ~/.local/bin
+
 	@cp -u shell/combinations/transbipride ~/.local/bin
 	@cp -u shell/combinations/transgaypride ~/.local/bin
 	@cp -u shell/combinations/translesbianpride ~/.local/bin
@@ -22,7 +24,7 @@ install-user:
 	@cp -u shell/sexuality/lesbianpride ~/.local/bin
 	@cp -u shell/sexuality/lesbianpride2 ~/.local/bin
 
-	@cp -u shell/sexuality/pridelist ~/.local/bin
+	@cp -u shell/pridelist ~/.local/bin
 
 	@echo "Configuring resources file for $(current_shell)"
 	@echo "export PATH=\$$PATH:~/.local/bin" >> $(current_shell_rc)
@@ -48,7 +50,7 @@ install:
 	@cp -u shell/sexuality/lesbianpride /usr/bin
 	@cp -u shell/sexuality/lesbianpride2 /usr/bin
 
-	@cp -u shell/sexuality/pridelist /usr/bin
+	@cp -u shell/pridelist /usr/bin
 
 	@pride
 
