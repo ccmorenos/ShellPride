@@ -1,0 +1,36 @@
+#! /bin/bash
+# Background Colors
+BLACK_TEXT='\033[30m'
+WHITE_TEXT='\033[38;2;255;255;255m'
+
+## Trans flag colors
+BLUE='\033[48;2;92;206;250m'
+PINK='\033[48;2;245;169;184m'
+WHIT='\033[48;2;255;255;255m'
+
+## Lesbian flag colors
+DORAN='\033[48;2;213;45;0m'
+LORAN='\033[48;2;255;154;86m'
+WHITE='\033[48;2;255;255;255m'
+LPINK='\033[48;2;209;98;164m'
+DPINK='\033[48;2;163;2;98m'
+
+# No Color
+NC='\033[0m'
+
+BOLD=$(tput bold)
+NORM=$(tput sgr0)
+
+# Print the flag
+printf "\n"
+printf "${BLACK_TEXT}${BLUE}           Trans          ${NC}\t"
+printf "${BOLD}${WHITE_TEXT}${DORAN}           Trans          ${NC}${NORM}\n"
+printf "${BLACK_TEXT}${PINK}          Rights          ${NC}\t"
+printf "${BLACK_TEXT}${LORAN}          Lesbians        ${NC}\n"
+printf "${BLACK_TEXT}${WHIT}            Are           ${NC}\t"
+printf "${BLACK_TEXT}${WHITE}            Are           ${NC}\n"
+printf "${BLACK_TEXT}${PINK}           Human          ${NC}\t"
+printf "${BLACK_TEXT}${LPINK}           Valid          ${NC}\n"
+printf "${BLACK_TEXT}${BLUE}          Rights          ${NC}\t"
+printf "${BOLD}${WHITE_TEXT}${DPINK}          Lesbians        ${NC}${NORM}\n"
+printf "\n"
