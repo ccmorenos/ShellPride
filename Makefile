@@ -22,6 +22,8 @@ install-user:
 	@cp -u shell/sexuality/lesbianpride ~/.local/bin
 	@cp -u shell/sexuality/lesbianpride2 ~/.local/bin
 
+	@cp -u shell/sexuality/pridelist ~/.local/bin
+
 	@echo "Configuring resources file for $(current_shell)"
 	@echo "export PATH=\$$PATH:~/.local/bin" >> $(current_shell_rc)
 
@@ -46,6 +48,8 @@ install:
 	@cp -u shell/sexuality/lesbianpride /usr/bin
 	@cp -u shell/sexuality/lesbianpride2 /usr/bin
 
+	@cp -u shell/sexuality/pridelist /usr/bin
+
 	@pride
 
 uninstall:
@@ -66,3 +70,5 @@ uninstall:
 	@rm -f /usr/bin/gaypride2
 	@rm -f /usr/bin/lesbianpride
 	@rm -f /usr/bin/lesbianpride2
+
+	@rm -f /usr/bin/pridelist

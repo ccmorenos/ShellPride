@@ -1,0 +1,27 @@
+#! /bin/bash
+
+BOLD=$(tput bold)
+NORM=$(tput sgr0)
+
+echo "Posible pride commands"
+
+echo "${BOLD}General:${NORM}"
+echo
+echo "- pride - progresspride"
+echo
+
+echo "${BOLD}Combinations:${NORM}"
+echo
+echo "- transbipride  - transgaypride  - translesbianpride"
+echo "- translesbianpride2"
+echo
+
+echo "${BOLD}Gender:${NORM}"
+echo
+echo "- genderfluidpride  - nonbinarypride  - transpride  - transpride2"
+echo "- transpride3  - transpride4"
+echo
+
+echo "${BOLD}Sexuality:${NORM}"
+echo
+echo "-bipride  -gaypride  -gaypride2  -lesbianpride  -lesbianpride2"
