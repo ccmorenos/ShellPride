@@ -5,4 +5,4 @@ cd /tmp/ShellPride
 sudo make install
 
 cd -
-rm /tmp/ShellPride
+rm /tmp/ShellPride -rf
