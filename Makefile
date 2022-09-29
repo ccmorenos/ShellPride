@@ -28,7 +28,7 @@ install-user:
 
 	@echo "Configuring resources file for $(current_shell)"
 	@echo "export PATH=\$$PATH:~/.local/bin" >> $(current_shell_rc)
-	@source $(current_shell_rc)
+	@bash $(current_shell_rc)
 
 	@pride
 
