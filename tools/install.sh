@@ -1,4 +1,4 @@
-git clone https://github.com/ccmorenos/ShellPride.git /tmp/ShellPride
+git clone https://github.com/ccmorenos/ShellPride.git /tmp/ShellPride --quiet
 
 cd /tmp/ShellPride
 
