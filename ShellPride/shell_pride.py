@@ -76,80 +76,87 @@ parser.add_argument(
 # Parse arguments.
 args = parser.parse_args()
 
-# Create a base color.
-base_colors = ColorsBase({"decorations": args.decorator})
 
-# Initialize the flags.
-added_flags = [
-    flags_names[
-        re.search(r"([^\W_\d]+)(_var[\d+])?", name)[1]
-    ](length=args.length) for name in args.flags
-]
+def main():
+    """Print pride flags."""
+    # Create a base color.
+    base_colors = ColorsBase({"decorations": args.decorator})
 
-# Get max length.
-max_stripes = max([
-    flag.stripes
-    for flag in added_flags
-])
+    # Initialize the flags.
+    added_flags = [
+        flags_names[
+            re.search(r"([^\W_\d]+)(_var[\d+])?", name)[1]
+        ](length=args.length) for name in args.flags
+    ]
 
-# Get Stripes.
-stripes = [
-    flag.center(flags_messages[name])
-    for flag, name in zip(added_flags, args.flags)
-]
+    # Get max length.
+    max_stripes = max([
+        flag.stripes
+        for flag in added_flags
+    ])
 
-# Add decorations.
-decorations = []
+    # Get Stripes.
+    stripes = [
+        flag.center(flags_messages[name])
+        for flag, name in zip(added_flags, args.flags)
+    ]
 
-if args.name:
-    decorations.append(
-        f"{base_colors.bold + base_colors.get_frg('WT')}Name: "
-        f"{base_colors.reset + base_colors.get_frg('decorations')}"
-        f"{args.name}"
-    )
+    # Add decorations.
+    decorations = []
 
-if args.pronouns:
-    decorations.append(
-        f"{base_colors.bold + base_colors.get_frg('WT')}Pronouns: "
-        f"{base_colors.reset + base_colors.get_frg('decorations')}"
-        f"{args.pronouns}"
-    )
+    if args.name:
+        decorations.append(
+            f"{base_colors.bold + base_colors.get_frg('WT')}Name: "
+            f"{base_colors.reset + base_colors.get_frg('decorations')}"
+            f"{args.name}"
+        )
 
-if args.zodiac_solar:
-    decorations.append(
-        f"{base_colors.bold + base_colors.get_frg('WT')}Zodiac ☀: "
-        f"{base_colors.reset + base_colors.get_frg('decorations')}"
-        f"{args.zodiac_solar}"
-    )
+    if args.pronouns:
+        decorations.append(
+            f"{base_colors.bold + base_colors.get_frg('WT')}Pronouns: "
+            f"{base_colors.reset + base_colors.get_frg('decorations')}"
+            f"{args.pronouns}"
+        )
 
-if args.zodiac_ascendant:
-    decorations.append(
-        f"{base_colors.bold + base_colors.get_frg('WT')}Zodiac ⬆: "
-        f"{base_colors.reset + base_colors.get_frg('decorations')}"
-        f"{args.zodiac_ascendant}"
-    )
+    if args.zodiac_solar:
+        decorations.append(
+            f"{base_colors.bold + base_colors.get_frg('WT')}Zodiac ☀: "
+            f"{base_colors.reset + base_colors.get_frg('decorations')}"
+            f"{args.zodiac_solar}"
+        )
 
-if args.zodiac_moon:
-    decorations.append(
-        f"{base_colors.bold + base_colors.get_frg('WT')}Zodiac ☾: "
-        f"{base_colors.reset + base_colors.get_frg('decorations')}"
-        f"{args.zodiac_moon}"
-    )
+    if args.zodiac_ascendant:
+        decorations.append(
+            f"{base_colors.bold + base_colors.get_frg('WT')}Zodiac ⬆: "
+            f"{base_colors.reset + base_colors.get_frg('decorations')}"
+            f"{args.zodiac_ascendant}"
+        )
 
-# Print the flags.
-print()
-for row in range(max_stripes):
-    print(end="\t")
+    if args.zodiac_moon:
+        decorations.append(
+            f"{base_colors.bold + base_colors.get_frg('WT')}Zodiac ☾: "
+            f"{base_colors.reset + base_colors.get_frg('decorations')}"
+            f"{args.zodiac_moon}"
+        )
 
-    for col in range(len(stripes)):
-        stripe = stripes[col]
-
-        if row < len(stripe):
-            print(stripe[row], end="    ")
-        else:
-            print("".center(args.length), end="    ")
-
-    if row < len(decorations):
-        print(decorations[row], end="")
-
+    # Print the flags.
     print()
+    for row in range(max_stripes):
+        print(end="\t")
+
+        for col in range(len(stripes)):
+            stripe = stripes[col]
+
+            if row < len(stripe):
+                print(stripe[row], end="    ")
+            else:
+                print("".center(args.length), end="    ")
+
+        if row < len(decorations):
+            print(decorations[row], end="")
+
+        print()
+
+
+if __name__ == "__main__":
+    main()
