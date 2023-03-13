@@ -35,6 +35,8 @@ Where:
 
 * `-L LENGTH, --length LENGTH`: Length of the flags.
 
+* `-lf, --list_flags`: List all the posible flags and exit.
+
 * `-d DECORATOR, --decorator DECORATOR`: Add the color for the decorator
 letters.
 
