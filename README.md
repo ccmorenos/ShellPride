@@ -1,4 +1,7 @@
 # ShellPride 🏳️‍🌈 :transgender_flag:
+[![PyPI version](https://img.shields.io/pypi/v/ShellPride.svg)](https://pypi.org/project/ShellPride/)
+[![License](https://img.shields.io/pypi/l/ShellPride.svg)](https://github.com/ccmorenos/ShellPride/blob/main/LICENSE)
+[![Test Python Package](https://github.com/ccmorenos/ShellPride/actions/workflows/test-python.yml/badge.svg?branch=main)](https://github.com/ccmorenos/ShellPride/actions/workflows/test-python.yml) [![Upload Python Package](https://github.com/ccmorenos/ShellPride/actions/workflows/python-publish.yml/badge.svg)](https://github.com/ccmorenos/ShellPride/actions/workflows/python-publish.yml)
 
 Shell scripts of pride flags to decorate the console.
 
@@ -6,45 +9,42 @@ Shell scripts of pride flags to decorate the console.
 
 ### From command
 
-ShellPride is installed running one of the following commands, using ether
-`curl` or `wget`.
+The package is available in the
+[Python Package Index (PyPi)](https://pypi.org/project/ShellPride/).
 
-```shell
-# Whith curl
-bash -c "$(curl -fsSl https://raw.githubusercontent.com/ccmorenos/ShellPride/main/tools/install.sh)"
-
-# Whith wget
-bash -c "$(wget -O- https://raw.githubusercontent.com/ccmorenos/ShellPride/main/tools/install.sh)"
-```
-
-### From Source
-
-To install ShellPride from source, first clone the repository.
-
-```shell
-git clone https://github.com/ccmorenos/ShellPride.git
-
-cd /ShellPride
-
-```
-
-Then install the package ether in `/usr/local/bin`.
-
-```shell
-sudo make install
-```
-
-Or in ``
-
-```shell
-make install-user
-```
-
-This installation will add the following line in the resource file, to make
-sure that `~/.local/bin` is in the `PATH`.
-
-```shell
-export PATH=$PATH:~/.local/bin
+```bash
+python3 -m pip install ShellPride
 ```
 
 ## Usage
+
+To use the decorator, run.
+
+```shell
+pridesh [-h] -f FLAGS [FLAGS ...] [-L LENGTH] [-d DECORATOR] [-n NAME]
+        [-p PRONOUNS] [-zs ZODIAC_SOLAR] [-za ZODIAC_ASCENDANT]
+        [-zm ZODIAC_MOON]
+```
+
+Where:
+
+* `-h, --help`: Show the help message and exit.
+
+* `-f FLAGS [FLAGS ...], --flags FLAGS [FLAGS ...]`: Configure the flags to be
+  shown.
+
+* `-L LENGTH, --length LENGTH`: Length of the flags.
+
+* `-d DECORATOR, --decorator DECORATOR`: Add the color for the decorator
+letters.
+
+* `-n NAME, --name NAME`: Add your name.
+
+* `-p PRONOUNS, --pronouns PRONOUNS`: Add your pronouns.
+
+* `-zs ZODIAC_SOLAR, --zodiac_solar ZODIAC_SOLAR`: Add your solar zodiac sign.
+
+* `-za ZODIAC_ASCENDANT, --zodiac_ascendant ZODIAC_ASCENDANT`: Add your
+  ascendant zodiac sign.
+
+* `-zm ZODIAC_MOON, --zodiac_moon ZODIAC_MOON`: Add your moon zodiac sign.
