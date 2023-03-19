@@ -54,7 +54,7 @@ class ColorsBase:
         """
         color = re.match(r"#?([A-Z\d]{6})", color)[1]
 
-        return [int(color[i:i+2], 16) for i in (0, 2, 4)]
+        return [int(color[i:i + 2], 16) for i in (0, 2, 4)]
 
     def add_color(self, name, color_code):
         """
