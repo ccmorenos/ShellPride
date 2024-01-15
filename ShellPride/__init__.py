@@ -170,7 +170,7 @@ def main():
     # Print the flags.
     print()
     for row in range(max_stripes):
-        print(end="\t")
+        print(end="    ")
 
         for col in range(len(stripes)):
             stripe = stripes[col]
